@@ -11,7 +11,8 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
-
+import psycopg2
+import dj_database_url
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -77,6 +78,10 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'Task.wsgi.application'
 
+
+DATABASE_URL = os.environ['postgres://crqowowpevbrod:c57ec3a306491762d3b7df4b34a70bb4cd1d912b8d26b4726293a064f8fdc227@ec2-3-226-134-153.compute-1.amazonaws.com:5432/dau5b91oe7n945']
+
+conn = psycopg2.connect(DATABASE_URL, sslmode='require')
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
@@ -151,3 +156,6 @@ REST_FRAMEWORK = {
 AUTH_USER_MODEL = "UsersAuth.User"
 
 SITE_ID=1
+
+
+DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
