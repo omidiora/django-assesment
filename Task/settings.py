@@ -27,7 +27,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '*',
-   'http://the-yogify.herokuapp.com/',
    'https://authdjangorest.herokuapp.com/',
    '127.0.0.1',
 ]
@@ -86,11 +85,11 @@ WSGI_APPLICATION = 'Task.wsgi.application'
 
 DATABASES = {
     'default': {
-        'HOST':'ec2-18-204-101-137.compute-1.amazonaws.com',
-        "Database":"d4ad6ri72ifk16",
+        'HOST':'ec2-3-226-134-153.compute-1.amazonaws.com',
+        "Database":"dau5b91oe7n945",
         'ENGINE': 'django.db.backends.mysql',
-        'USER': 'tbxorbeizeyyit',
-        'PASSWORD': 'c22cff78b04de99df913f26b581e1f4851328942c257159ade09fe1769af0e48',
+        'USER': 'crqowowpevbrod',
+        'PASSWORD': 'c57ec3a306491762d3b7df4b34a70bb4cd1d912b8d26b4726293a064f8fdc227',
         "Port":5432,
     }
 }
