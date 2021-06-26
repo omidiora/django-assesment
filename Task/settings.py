@@ -89,7 +89,6 @@ DATABASES = {
         'HOST':'ec2-18-204-101-137.compute-1.amazonaws.com',
         "Database":"d4ad6ri72ifk16",
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'django_deploy',
         'USER': 'tbxorbeizeyyit',
         'PASSWORD': 'c22cff78b04de99df913f26b581e1f4851328942c257159ade09fe1769af0e48',
         "Port":5432,
