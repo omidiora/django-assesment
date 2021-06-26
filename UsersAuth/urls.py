@@ -8,12 +8,12 @@ from rest_framework import routers
 router = routers.DefaultRouter()
 
 
-router.register('logout',  views.AuthViewSet, basename='cutareadel')
+router.register('users',  views.AuthViewSet, basename='cutareadel')
 #...
 
 urlpatterns = [
     path('register/', views.UserCreate.as_view(), name='account-create'),
-    path('/login', views.LoginAPIView.as_view(), name='account-create'),
+    path('users/login', views.LoginAPIView.as_view(), name='account-create'),
     path('', include(router.urls)),
    
 ]
