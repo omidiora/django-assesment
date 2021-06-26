@@ -5,25 +5,9 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from UsersAuth.serializers import UserSerializer , LoginSerializers ,LogoutSerializer
-
 from rest_framework.authtoken.models import Token
-
-from django.contrib.auth import get_user_model
 from rest_framework import viewsets
 from rest_framework.response import Response
-from rest_framework.permissions import IsAuthenticated
-from rest_framework import exceptions
-from rest_framework import authentication
-from django.contrib.auth import authenticate, get_user_model
-from rest_framework.authentication import BasicAuthentication, SessionAuthentication
-from rest_framework.generics import GenericAPIView
-from django.contrib.auth import authenticate, login
-from rest_framework import authentication
-from rest_framework import exceptions
-
-from .models import User
-from django.http import JsonResponse
-from django.contrib.auth import get_user_model, logout
 from rest_framework.decorators import action
 from rest_framework.permissions import AllowAny
 
