@@ -1,1 +1,1 @@
-web: gunicorn UsersAuth.wsgi
+gunicorn --log-file=- onbytes.wsgi:application
