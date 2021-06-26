@@ -20,7 +20,7 @@ from rest_framework.generics import GenericAPIView
 from django.contrib.auth import authenticate, login
 from rest_framework import authentication
 from rest_framework import exceptions
-import bcrypt
+
 from .models import User
 from django.http import JsonResponse
 from django.contrib.auth import get_user_model, logout
