@@ -76,12 +76,25 @@ WSGI_APPLICATION = 'Task.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'HOST':'ec2-18-204-101-137.compute-1.amazonaws.com',
+        "Database":"d4ad6ri72ifk16",
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'django_deploy',
+        'USER': 'tbxorbeizeyyit',
+        'PASSWORD': 'c22cff78b04de99df913f26b581e1f4851328942c257159ade09fe1769af0e48',
+        "Port":5432,
     }
 }
+
 
 
 # Password validation
