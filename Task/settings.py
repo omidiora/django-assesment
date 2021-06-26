@@ -25,7 +25,12 @@ SECRET_KEY = '8)a_7fe385gqc*v9dm7e1&c*-xr7hul(tb_u&glc=!itm!$ie9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '*',
+   'http://the-yogify.herokuapp.com/',
+   'https://authdjangorest.herokuapp.com/',
+   '127.0.0.1',
+]
 
 
 # Application definition
